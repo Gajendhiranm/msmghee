@@ -32,4 +32,4 @@ const router = require("./routes/route")
 app.use(router)
 
 app.use(express.static(path.resolve(__dirname, "./client/dist/msmGhee")));
-app.listen(4000);
+app.listen(process.env.PORT);
