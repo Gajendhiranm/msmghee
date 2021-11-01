@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <h2>Welcome <b>Admin</b> !!!</h2>
+    <p>* Displaying orders that are ordered By the customers</p>
+    <hr>
+  </div>
+
+
+  
+<div class="container">
+  <table>
+    <tr>
+    <th>S.no</th>
+    <th>address</th>
+    <th>name</th>
+    <th>number</th>
+    <th>email</th>
+    <th>Products</th>
+
+    </tr>
+
+
+
+    <tr *ngFor="let item of datas; index as i;">
+    <td>{{i}} </td>
+    <td>{{item.address}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.number}}</td>
+    <td>{{item.email}}</td>
+    <td><b>{{ item.details | json}}</b></td>
+
+
+    </tr>
+  </table>

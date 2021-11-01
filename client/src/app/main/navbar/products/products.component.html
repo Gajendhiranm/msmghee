@@ -1,0 +1,83 @@
+
+<div class="container mt-5">
+  <h2>Welcome <b>{{username}}</b> !!!</h2>
+  <p>* Currently available products in our Company</p>
+  <hr>
+</div>
+
+<div class="container product-cards d-flex flex-wrap">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="../../../../assets/images/product1.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Ghee - 100ml</h5>
+      <div class="d-flex">
+        <p for="quantity">Quantity:</p>
+        <input type="number" id="quantity" #quantity class="ml-3" name="quantity" min="1" max="10"><br/>
+      </div>
+
+      <a  class="btn btn-primary buy-button mt-4" (click)="addData(100,quantity.value,'100ml')">buy now</a>
+    </div>
+  </div>
+
+  <div class="card ml-4" style="width: 18rem;">
+    <img class="card-img-top" src="../../../../assets/images/product2.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Ghee - 200ml</h5>
+      <div class="d-flex">
+        <p for="quantity">Quantity:</p>
+        <input type="number" id="quantity" #quantity1 class="ml-3" name="quantity" min="1" max="10"><br/>
+      </div>
+      <a  class="btn btn-primary buy-button mt-5" (click)="addData(100,quantity1.value,'200ml')">buy now</a>
+    </div>
+  </div>
+
+  <div class="card ml-4" style="width: 18rem;">
+    <img class="card-img-top" src="../../../../assets/images/product3.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Ghee - 100ml</h5>
+      <div class="d-flex">
+        <p for="quantity">Quantity:</p>
+        <input type="number" id="quantity" #quantity2 class="ml-3" name="quantity" min="1" max="10"><br/>
+      </div>
+      <a  class="btn btn-primary buy-button mt-3" (click)="addData(100,quantity2.value,'200ml')">buy now</a>
+    </div>
+  </div>
+
+  <div class="card mt-4" style="width: 18rem;">
+    <img class="card-img-top" src="../../../../assets/images/product4.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Ghee - 100ml</h5>
+      <div class="d-flex">
+        <p for="quantity">Quantity:</p>
+        <input type="number" id="quantity" #quantity3 class="ml-3" name="quantity" min="1" max="10"><br/>
+      </div>
+      <a  class="btn btn-primary buy-button mt-3" (click)="addData(100,quantity3.value,'200ml')">buy now</a>
+    </div>
+  </div>
+
+  <div class="card mt-4 ml-4" style="width: 18rem;">
+    <img class="card-img-top" src="../../../../assets/images/product5.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Ghee - 100ml</h5>
+      <div class="d-flex">
+        <p for="quantity">Quantity:</p>
+        <input type="number" id="quantity" class="ml-3" #quantity4 name="quantity" min="1" max="10"><br/>
+      </div>
+      <a  class="btn btn-primary buy-button mt-3" (click)="addData(100,quantity4.value,'200ml')">buy now</a>
+    </div>
+  </div>
+
+  <div class="card mt-4 ml-4" style="width: 18rem;">
+    <img class="card-img-top" src="../../../../assets/images/product6.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Ghee - 100ml</h5>
+      <div class="d-flex">
+        <p for="quantity">Quantity:</p>
+        <input type="number" id="quantity" class="ml-3" #quantity5 name="quantity" min="1" max="10"><br/>
+      </div>
+      <a  class="btn btn-primary buy-button mt-3" (click)="addData(100,quantity5.value,'200ml')">buy now</a>
+    </div>
+  </div>
+</div>
+
+

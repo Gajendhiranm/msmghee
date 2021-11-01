@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">
+      <img src="../../../assets/images/logo.jpeg" class="logo" height="50" width="50" style="border-radius: 50%;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link font-weight-bolder" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bolder" routerLink="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bolder" routerLink="/product">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bolder" routerLink="/order">orders</a>
+      </li>
+      <div *ngIf="!presentOrNot;else elseBlock;">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bolder" routerLink="/login">login</a>
+        </li>
+      </div>
+    <ng-template #elseBlock>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bolder"  (click)="cleanStorage()">logout</a>
+      </li>
+    </ng-template>
+
+
+    </ul>
+  </div>
+</nav>

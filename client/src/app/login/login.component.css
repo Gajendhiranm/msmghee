@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100%;
+
+  font-family: 'Montserrat', sans-serif;
+}
+a,li{
+  text-decoration: none;
+}
+.login-button{
+   outline: none !important;
+  border: none !important;
+  height:35px;
+  border-radius: 5%;
+  width:100px;
+  color: aliceblue;
+  background-color:#F9A828;
+  display: block;
+  margin: auto;
+}
+.Signup{
+  margin-top: 100px !important;
+}
+.logo{
+  border-radius: 50%;
+}
+.form-div input{
+  height:50px;
+  width:300px;
+  border-radius: 20px;
+  border: 1px solid #ebebeb;
+  outline: none;
+  padding: 10px;
+}
+@media(max-width:768px){
+  .form-div input{
+      height:45px;
+  }
+}
+
+.admin-button{
+    border: none;
+    color: #ebebeb;
+    padding: 10px;
+}
