@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
         let currentUser = await response.json();
         localStorage.setItem("user",JSON.stringify(currentUser));
         let isUser = localStorage.getItem("user");
-        if(JSON.parse(isUser).name.length != 0){
+        if(JSON.parse(isUser).name.length != 0 ){
             let isAlive = true;
             this._userInteract.setUser(isAlive);
 

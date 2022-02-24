@@ -22,7 +22,7 @@ const login = async (req, res) => {
   try {
     const currentuser = await user.findOne({ number: data.number });
     console.log(currentuser);
-    if (currentuser) {
+    if (currentuser && typeof currentuser == Number) {
       if (data.password == currentuser.password)
         res.status(200).send(currentuser);
       else res.status(400).send({ error: "Incorrected Password" });
@@ -50,18 +50,15 @@ const order = async (req, res) => {
   }
 };
 
-
-const admin = async(req,res) =>{
-  console.log("working~~~~")
-  try{
-    const users =  await user.find({});
-    console.log(users)
-    res.json(users)
-  }
-  catch (e) {
+const admin = async (req, res) => {
+  console.log("working~~~~");
+  try {
+    const users = await user.find({});
+    console.log(users);
+    res.json(users);
+  } catch (e) {
     res.json({ message: e });
   }
+};
 
-}
-
-module.exports = { signin, login, order,admin };
+module.exports = { signin, login, order, admin };
