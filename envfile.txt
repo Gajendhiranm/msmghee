@@ -1,0 +1,1 @@
+DB_CONNECTION = mongodb+srv://msmUser:msmUser@cluster0.teeno.mongodb.net/msmUser?retryWrites=true&w=majority
